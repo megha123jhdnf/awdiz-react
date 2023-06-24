@@ -1,9 +1,9 @@
 
-function Home() {
+function Navbar() {
     return (
       <div>
-        Hello World
+        This is Home
       </div>
     );
   }
-  export default Home
+  export default Navbar;
