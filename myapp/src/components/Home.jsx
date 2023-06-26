@@ -2,7 +2,7 @@
 function Navbar() {
     return (
       <div>
-        This is Home
+        This is Home page
       </div>
     );
   }
