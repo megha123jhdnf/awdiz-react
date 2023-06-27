@@ -8,6 +8,7 @@ import Welcome from './components/Welcome';
 import Login from './components/Login';
 import Addsub from './components/Addsub';
 import Section from './components/Section';
+import Type1UseEffect from './components/Type1UseEffect';
 
 function App() {
   
@@ -16,11 +17,12 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>} /> 
-        <Route path="/Welcome" element={<Welcome/>} /> 
-        <Route path='/login' element={<Login/>} /> 
-        <Route path='/Addsub' element={<Addsub/>}  />
-        <Route path='/Section' element={<Section/>}  />
+      <Route exact path="/Type-1-useffect" element={<Type1UseEffect/>} /> 
+      <Route exact path='/' element={<Home/>} /> 
+        <Route exact path="/Welcome" element={<Welcome/>} /> 
+        <Route exact path='/login' element={<Login/>} /> 
+        <Route exact path='/Addsub' element={<Addsub/>}  />
+        <Route exact path='/Section' element={<Section/>}  />
 
 
 
