@@ -11,6 +11,8 @@ import Section from './components/Section';
 import Type1UseEffect from './components/Type1UseEffect';
 import { useState } from 'react';
 import Type2UseEffect from './components/Type2UseEffect';
+import Type3UseEffectt from './components/Type3UseEffectt';
+import Type4UseEffectt from './components/Type4UseEffectt';
 
 function App() {
   console.log("Inside app")
@@ -18,6 +20,8 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
+        <Route exact path="/Type-4-Useeffect" element={<Type4UseEffectt/>} />
+        <Route exact path="/Type-3-Useeffect" element ={<Type3UseEffectt/>} />
       <Route exact path="/Type-2-useffect" element={<Type2UseEffect/>} /> 
       <Route exact path="/Type-1-useffect" element={<Type1UseEffect/>} /> 
       <Route exact path='/' element={<Home/>} /> 
