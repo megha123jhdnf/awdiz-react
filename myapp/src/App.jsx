@@ -19,6 +19,8 @@ import StyledCombo from './components/01-07-2023/StyledCombo';
 import Wrapper from './components/01-07-2023/Wrapper';
 import DeclerativeWay from './components/01-07-2023/DeclerativeWay';
 import Map from './components/01-07-2023/Map';
+import SinglePro from './components/02-07/SinglePro';
+import Xyz from './components/02-07/Xyz';
 
 
 function App() {
@@ -29,8 +31,8 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
-       
-      
+       <Route exact path='xyz' element={<Xyz/>} /> 
+        <Route exact path='/signle-pro/:id' element={<SinglePro/>} />
          <Route exact path='/map' element={<Map myUsers={myUsers}setMyUsers={setMyUsers} myName={"Santosh"} kuchbhi={["ROCKY", "POOJA", "MEGHA"]} />} />
        <Route exact path='/declerative-way' element={<DeclerativeWay/>} />
       <Route exact path='/wrappper' element={<  Wrapper/>} />
