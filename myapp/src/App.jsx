@@ -21,6 +21,9 @@ import DeclerativeWay from './components/01-07-2023/DeclerativeWay';
 import Map from './components/01-07-2023/Map';
 import SinglePro from './components/02-07/SinglePro';
 import Xyz from './components/02-07/Xyz';
+import DynamicClasses from './components/04-07/DynamicsClaases';
+import DynamicStyles from './components/04-07/DynamicsStyle';
+import ChildernProp from './components/04-07/ChildrenProp';
 
 
 function App() {
@@ -31,6 +34,9 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
+        <Route exact path='children-prop' element={<ChildernProp/>} />
+        <Route exact path='dynamic-style' element={< DynamicStyles/>} />
+        <Route exact path='dynamics-class' element={<DynamicClasses />} />
        <Route exact path='xyz' element={<Xyz/>} /> 
         <Route exact path='/signle-pro/:id' element={<SinglePro/>} />
          <Route exact path='/map' element={<Map myUsers={myUsers}setMyUsers={setMyUsers} myName={"Santosh"} kuchbhi={["ROCKY", "POOJA", "MEGHA"]} />} />
