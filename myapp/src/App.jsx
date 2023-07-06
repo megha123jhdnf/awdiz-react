@@ -24,6 +24,7 @@ import Xyz from './components/02-07/Xyz';
 import DynamicClasses from './components/04-07/DynamicsClaases';
 import DynamicStyles from './components/04-07/DynamicsStyle';
 import ChildernProp from './components/04-07/ChildrenProp';
+import FormOne from './components/06-07-2023/FormOne';
 
 
 function App() {
@@ -32,8 +33,9 @@ function App() {
   // console.log("Inside app")
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
+        <Route exact path='form-one' element={<FormOne/>} />
         <Route exact path='children-prop' element={<ChildernProp/>} />
         <Route exact path='dynamic-style' element={< DynamicStyles/>} />
         <Route exact path='dynamics-class' element={<DynamicClasses />} />
@@ -58,7 +60,7 @@ function App() {
 
 
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
 
     </div>
   );
