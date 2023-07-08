@@ -19,12 +19,15 @@ import StyledCombo from './components/01-07-2023/StyledCombo';
 import Wrapper from './components/01-07-2023/Wrapper';
 import DeclerativeWay from './components/01-07-2023/DeclerativeWay';
 import Map from './components/01-07-2023/Map';
+
 import SinglePro from './components/02-07/SinglePro';
 import Xyz from './components/02-07/Xyz';
 import DynamicClasses from './components/04-07/DynamicsClaases';
 import DynamicStyles from './components/04-07/DynamicsStyle';
 import ChildernProp from './components/04-07/ChildrenProp';
 import FormOne from './components/06-07-2023/FormOne';
+import FormSingleState from './components/08-07/FormSingleState';
+import UseCallback from './components/08-07/UseCallback';
 
 
 function App() {
@@ -33,8 +36,10 @@ function App() {
   // console.log("Inside app")
   return (
     <div>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Routes>
+        <Route exact path='usecallback' element={<UseCallback/>} />
+        <Route exact path='form-single-state' element={<FormSingleState />} />
         <Route exact path='form-one' element={<FormOne/>} />
         <Route exact path='children-prop' element={<ChildernProp/>} />
         <Route exact path='dynamic-style' element={< DynamicStyles/>} />
@@ -60,7 +65,7 @@ function App() {
 
 
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
 
     </div>
   );
