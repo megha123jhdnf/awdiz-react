@@ -31,6 +31,7 @@ import UseCallback from './components/08-07/UseCallback';
 import UseMemo from './components/09-07/UseMemo';
 import UseReducer from './components/09-07/UseReducer';
 import ProductsFromBackend from './components/11-07/ProductsFromBackend';
+import Product from './components/13-07/Product';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
+        <Route exact path='product' element={<Product/>}  />
         <Route exact path='product-from-backend' element={<ProductsFromBackend/>} />
         <Route exact path='use-reducer' element={<UseReducer/>} />
         <Route exact path='use-memo' element ={<UseMemo/>} />
