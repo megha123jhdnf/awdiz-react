@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { Route,Routes } from 'react-router-dom';
 import Welcome from './components/Welcome';
-import Login from './components/Login';
 import Addsub from './components/Addsub';
 import Section from './components/Section';
 import Type1UseEffect from './components/Type1UseEffect';
@@ -30,8 +29,12 @@ import FormSingleState from './components/08-07/FormSingleState';
 import UseCallback from './components/08-07/UseCallback';
 import UseMemo from './components/09-07/UseMemo';
 import UseReducer from './components/09-07/UseReducer';
-import ProductsFromBackend from './components/11-07/ProductsFromBackend';
+import Register from './components/15-07/Register';
+import Login from './components/15-07/Login';
+import ProductssFromBackend from './components/13-07/ProductssFromBackend';
 import Product from './components/13-07/Product';
+import Cart from './components/18-07/Cart';
+import Profile from './components/22-07-23/Profile';
 
 
 function App() {
@@ -42,8 +45,12 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
-        <Route exact path='product' element={<Product/>}  />
-        <Route exact path='product-from-backend' element={<ProductsFromBackend/>} />
+        <Route exact path='profile' element={<Profile/>} />
+        <Route exact path='/cart' element={<Cart/>} />
+        <Route exact path='/products/:id' element={<Product/>} />
+      <Route exact path='/productss-from-backend' element={<ProductssFromBackend/>} />
+      <Route exact path='/login' element={<Login/>} /> 
+      <Route exact path='/register' element={<Register/>} />
         <Route exact path='use-reducer' element={<UseReducer/>} />
         <Route exact path='use-memo' element ={<UseMemo/>} />
         <Route exact path='usecallback' element={<UseCallback/>} />
@@ -66,7 +73,6 @@ function App() {
       <Route exact path="/Type-1-useffect" element={<Type1UseEffect/>} /> 
       <Route exact path='/' element={<Home/>} /> 
         <Route exact path="/Welcome" element={<Welcome/>} /> 
-        <Route exact path='/login' element={<Login/>} /> 
         <Route exact path='/Addsub' element={<Addsub/>}  />
         <Route exact path='/Section' element={<Section/>}  />
 
